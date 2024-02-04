@@ -1,0 +1,159 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: weather
+  examples: |
+    - whats the weather
+    - i want to know about the weather
+    - tell me weather forecast
+    - hows the weather
+
+
+- intent: city
+  examples: |
+    - Delhi
+    - Mumbai
+    - Dehradun
+    - Gujrat
+
+
+    
+- intent: information
+  examples: |
+    - tell me something
+    - i need some help
+    - can you plz provide me some information
+
+
+- intent: knowledge
+  examples: |
+    - what is the meaning of
+    - tell me some important facts
+    
+
+- intent: translate
+  examples: |
+    - can you do translate
+    - do translation of my message
+
+
+
+- intent: sentence
+  examples: |
+    - translate this sentence from english to hindi
+    - translate this sentence from hindi to english
+
+    
+- intent: images
+  examples: |
+    - i nedd some images
+    - can you give me some images
+    - help for finding images
+ 
+- intent: picture
+  examples: |
+    - give me a image of dog
+    - a picture of any actor
+  
+
+- intent: questions   
+  examples: |
+    - i have some questions
+    - are you able to giving answer
+    - you have knowlede of question
+
+
+- intent: answers
+  examples: |
+    - what is the name
+    - who is the father of his

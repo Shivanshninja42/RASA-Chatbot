@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: happy weather 
+  steps:
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+
+- story: new information 
+  steps:
+  - intent: knowledge
+  - action: new_action
+
+- story: new translation 
+  steps:
+  - intent: sentence
+  - action: custom_action
+ 
+- story: new image 
+  steps:
+  - intent: picture
+  - action: my_action
+
+
+
+
+
+- story: new questions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: questions
+  - action: utter_questions
+  - intent: answers
+  - action: best_action

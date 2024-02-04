@@ -1,0 +1,105 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challeng
+  - weather
+  - city
+  - information
+  - knowledge
+  - translate 
+  - sentence
+  - images
+  - picture
+  - questions
+  - answers
+
+
+actions: 
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_city
+  - utter_temp
+  - action_weather_api
+  - utter_knowledge
+  - utter_info
+  - new_action
+  - utter_new
+  - utter_old
+  - utter_image
+  - custom_action
+  - utter_picture
+  - my_action
+  - utter_questions
+  - best_action   
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_city:
+  - text: " enter the city name " 
+ 
+  utter_temp:
+  - text: " today temperatre is {temp}"
+
+  utter_knowledge:
+  - text: "which kind of information you want"
+
+  utter_info:
+  - text: " {new_action}  "
+
+  utter_new:
+  - text: " enter your message for translation   "
+
+  utter_old: 
+  - text: " {custom_action} "
+
+  utter_image: 
+  - text: " ok tell me which kind of image you want "
+
+  utter_picture: 
+  - text: " here is the picture  {my_action} "
+
+  
+  utter_questions:
+  - text: " enter you question here and get the answer "
+  
+  
+  utter_answers:
+  - text: " {best_action} "
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
